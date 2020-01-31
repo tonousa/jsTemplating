@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+	form {
+		margin-top:-5px;
+		
+		}
+		
+.cancelBtn{
+	float:right;
+	top:2px;
+	right:4px;
+	text-align:left;
+	background-image: url(/images/textfield_delete.png);
+	background-repeat: no-repeat;
+	background-position:44px -2px;
+	height: 20px;
+	width:74px;
+	cursor:pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+		
+	h2 {
+		margin-top:-5px;
+		font-size:26px;
+		}
+    
+    .fugiDiv
+    {
+       position:relative;
+	   width:174px;
+	   height:350px;
+       float:left;
+       margin:1px;
+       padding-top:1px;
+       border:solid 1px #8c959a;
+       text-align:center;
+        } 
+        
+    .fugiDiv a
+    { 
+        text-decoration:none;
+        }
+		
+.fugiDiv a:hover
+    { 	display:block;
+		height:100%;
+		background-color:#e2f1fa;
+        text-decoration:none;
+        }
+	  
+	
+	 #statusLabelDiv
+    { 
+		display:block;
+		width:160px;
+	   position:relative;
+       top:0px;
+       left:6px;
+	   height:1px;
+       text-align:center;
+       margin-bottom:2px;
+       z-index:9999;
+
+      } 
+     
+    .statusLabelClass
+     {
+	   display:block;
+	   font-family:Arial, Arial, Helvetica, sans-serif;
+       font-size: 22px;
+       font-weight: 700;
+	   text-transform:Uppercase;
+	   width:160px;
+	   color:#c01f2f;
+       margin-bottom:2px;
+		
+      }
+	  
+	  
+      
+    #rewardPaidDiv
+    { 
+	   display:block;
+	   position:relative;
+       top:-15px;
+       left:0px;
+	   height:2px;
+	   text-align:center;
+       margin-bottom:2px;
+       z-index:9900;
+	 } 
+     
+    .rewardPaidLabel
+     {
+	  display :block;
+	  font-family:Arial, Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      background-color:#63cc40;
+      font-weight: 700;
+	  width:175px;
+	  color:#fefefe;
+      margin-bottom:2px;
+	
+	}
+        
+    .nameDiv
+    {
+	  margin:0px; 
+	  margin-bottom:2px;
+      background-color:#d7d6d6;
+      border:solid 1px #dedede;
+      text-align:center;
+     }   
+    
+    #capDate{
+	display:block;
+    line-height:11px;
+	height:18px;
+	padding:1px;
+	
+     }
+             
+   #locDiv
+    {
+	line-height:11px;
+	   height:28px;
+       padding:1px;
+     }
+	 
+     #cAgencyDiv
+    {
+	line-height:13px;
+	padding:1px;
+     }
+        
+  .clear
+     {
+      clear:both;
+      }
+         
+  .fName 
+  {
+	   font-family:Arial, Helvetica, sans-serif;
+	   font-size: 74%;
+	   font-weight: 500;
+	   color:#000000;
+	   text-transform: capitalize;
+	   padding-top: 1px;
+	   padding-bottom: 1px;
+	}
+	
+    .lName 
+	{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 90%;
+	    font-weight: 700;
+	    color:#222222;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-bottom: 2px;
+	}
+	
+	 .label 
+	 {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 11px;
+	    font-weight: 500;
+		line-height:13px;
+	    color:#000000;
+	    text-transform: capitalize;
+		margin-top:6px;
+	    padding-top: 1px;
+		padding-bottom: 1px;
+	 }
+	 
+	 #dropDownListContainer{
+	 width:855px;
+	 height:30px;
+	 margin:0px;
+	 padding:0px;
+	 text-align:center;
+	 }
+	 
+	 #txtBoxContainer
+	 {
+	 width:855px;
+	 height:30px;
+	 margin:0px;
+	 padding:0px;
+	 text-align:center;
+	 }
+	 
+	 .filterLabel, div.filterLabel 
+	    {
+	    display:inline-block;
+	    width:110px;
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 10px;
+	    font-weight:bolder;
+		line-height:11px;
+	    color:#000000;
+	    text-transform:uppercase;
+		margin:2px;
+	    padding-top: 2px;
+		padding-bottom: 2px;
+		text-align:right;
+	 }
+	 
+	 .fltrFloat{
+	    float: left;
+	    text-indent: 2px;
+	    width: 285px;
+	    padding: 0px;
+	    margin:0px;	
+	    text-align:left;
+	}
+	 
+	  .txtBox
+	 {
+	     display:inline;
+	     width:140px;
+	     margin:0px;
+	 
+	 }
+	 
+	
+	 
+	.strongLabel 
+	    {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 11px;
+		line-height:12px;
+	    font-weight: 700;
+	    color:#000;
+	    text-transform: capitalize;
+	    padding-top: 1px;
+	    padding-bottom: 2px;
+	    }
+	
+	.bigRedLabel 
+	    {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 90%;
+	    font-weight: 600;
+	    color:#c01f2f;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	    }
+            
+  .subhead 
+        {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 110%;
+	    font-weight: 700;
+	    color:#2f5481;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	    }
+	
+.validatorMessage 
+	    {
+	    display:block;
+	    font-family:Arial, Helvetica, sans-serif;
+	    background-color:Red;
+	    font-size: 90%;
+	    font-weight: 700;
+	    color:#fefefe;
+	    text-transform: capitalize;
+	    padding-left: 4px;
+	    margin:2px;
+	    }
+
+	
+.detailText 
+        {
+		font-size: 106%;
+	    font-weight: 600;
+	    text-transform:capitalize;
+		color:#444;
+	    }
+	
+	.searchFieldLabel 
+	    {
+	    font-family:Helvetica, Arial, sans-serif;
+		font-size: 86%;
+	    font-weight: 600;
+		color:#666;
+	    }
+	
+	.searchFieldContainer
+	    {
+	    margin-left:20px;
+	    margin-right:auto;
+	    width:690px;
+	    }
+	
+	div.float 
+		{
+		float: left;
+		text-indent: 2px;
+		width:337px;
+		padding: 2px;
+		margin:0px;	
+		}
+    
+
+ .selRow
+        {
+         background-color: Yellow;
+        }
+		
+	select 
+	    {   
+		color:#2c4972;  
+		font-weight: bold;   
+		} 
+		
+	.selectDiv
+	    {
+		float:right;
+		width:143px;
+		text-align:right; 
+		margin-right:10px; 
+		margin-top:-4px; 
+		margin-bottom:-20px;
+		color:#2c4972;
+	    }
+	
+	 .showFilter
+        { 
+        display:none;
+        
+        position:absolute;
+        width:1px;
+        height:1px;
+        left:10px;
+        top:10px;
+        padding:10px;
+        border:solid 1px #828e9a;
+        z-index:9999;
+		background-color:#e3e7ec; 
+	background-image: -moz-linear-gradient(top, #e3e7ec, #a0aec2); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #e3e7ec),color-stop(1, #a0aec2)); /* Saf4+, Chrome */
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e7ec', endColorstr='#a0aec2'); /* IE6,IE7 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3e7ec', endColorstr='#a0aec2')"; /* IE8+ */
+	
+        }
+        
+      #controlDiv 
+       {
+        font-size:12px;
+        font-weight:600;
+        width:806px;
+        float:left;
+        background-color:#ededed;
+        padding-bottom:4px;
+        margin-left:1px;
+        margin-right:10px;
+        border:solid 1px #999;
+        text-align:right;
+        }
+        
+      .FugiNo 
+	  {
+        display:block;
+		height:22px;
+        font-family:Arial, Arial, Helvetica, sans-serif;
+        font-size:12px;
+        font-weight:600;
+        }
+        
+      .controlLabelBtn
+        {
+        position:relative;
+        float:right;
+        font-size:12px;
+        font-weight:600;
+		top:22px;
+        left: -22px;
+        z-index:9900;
+          }
+       
+     .controlLabel
+     {
+      font-family:Arial, Helvetica, sans-serif;
+	    font-size: 10px;
+	    font-weight: 600;
+		line-height:11px;
+	    color:#2c4972;
+	    text-transform:uppercase;
+		margin:4px;
+	    padding-top: 2px;
+		padding-bottom: 2px;
+     }
+	
+  #bannerWide img{
+   height:0px;
+   width:0px;
+   
+   }
+   
+   div.bnrText {
+	float: left;
+	text-indent: 2px;
+	width: 375px;
+	padding: 2px;
+	margin:0px;	
+}
+
+#listWidth{
+	width:915px;
+	}
+	
+
+
+  
+	  
+  

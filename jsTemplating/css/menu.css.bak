@@ -1,0 +1,93 @@
+#nav,
+#nav ul			{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	}
+#nav			{ 
+	background: none; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; /* 14px / 16px */ 
+	font-weight:bold; 
+	text-transform: uppercase; 
+	height: 2.2em; /* 32px / 14px */ 
+	line-height: 16px; /* 21px / 14px */ 
+	width: 450px; }
+#nav li			{ 
+	background: none; 
+	float: left; 
+	height: 2.2em; /* 32px / 14px */ 
+	margin: 0; 
+	padding: 0; 
+	position: relative; 
+	}
+#nav a			{ 
+	background: none; 
+	color: #0F4283; 
+	display: block; 
+	padding: 0.2em 17px 0.2em; /* 4px 30px 7px */ 
+	text-decoration: none; 
+	}
+
+#nav a:hover,
+#nav a:focus		{ 
+	color: #0F4283;
+	background-image:url(/images/menuTransOver.png); 
+	background-repeat:repeat-x; 
+	background-position:top;
+	}
+					/*this is where the dropdown starts*/
+#nav ul			{ 
+	background: #ECF0F3; 
+	border-top:1px solid #B1BBCB; 
+	border-right:2px solid #B1BBCB;
+	border-bottom:2px solid #B1BBCB;
+	border-left:1px solid #B1BBCB; 
+	left: 12px; 
+	font-size: 12px; 
+	font-weight:bold; 
+	text-transform: capitalize; /* 12px / 14px */  
+	line-height: 1.1em; /* 18px / 12px */ 
+	position: absolute; 
+	top: 1.8em; /* 32px / 12px */ 
+	width: 245px; 
+	-webkit-box-shadow: #334457 4px 4px 6px;
+	-moz-box-shadow: #334457 4px 4px 6px;
+	box-shadow: #334457 4px 4px 6px;
+	-moz-border-radius: 0px 6px 6px 7px;
+	-webkit-border-radius: 0px 6px 6px 7px;
+	}
+#nav ul li		{ background: none; float: none; height: auto; width: 195px; }
+#nav ul a		{ background: none; padding: 0.28em 5px 0.38em; /* 1px 30px 3px */ width: 184px; }
+#nav ul ul		{ font-size: 12px; }
+
+#nav ul a:hover,
+#nav ul a:focus		{ background: #fefefe;  border-left:2px solid #B1BBCB; margin-left:-2px;}
+#nav ul .hover>a	{ background: #fefefe; }
+
+#nav ul .subMenuIndicator{
+	background-image:url(/images/bullet2.gif);
+	background-repeat: no-repeat;
+	background-position:right;
+}
+
+#nav ul .subMenuIndicator a:hover,
+#nav ul .subMenuIndicator a:focus{
+	background-image:url(/images/bullet2.gif);
+	background-repeat: no-repeat;
+	background-position:right;
+
+}
+
+#nav ul ul		{ left: 194px; top: 0.2em; /* 6px / 12px */ }
+
+#nav ul,
+#nav :hover ul ul,
+#nav .hover ul ul	{ margin-left: -9999px; }
+
+#nav li:hover>ul,
+#nav li.hover>ul,
+#nav a:focus+ul,
+#nav ul ul,
+#nav .hover a:focus	{ margin-left: 0; }
+#nav ul a:focus		{ margin-left: 9999px; }

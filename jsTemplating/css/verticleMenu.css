@@ -1,0 +1,112 @@
+<style type="text/css" media="screen">
+
+/**************** menu coding *****************/
+#vmenu {
+	width: 100%;
+	z-index:5000;
+}
+
+#vmenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#vmenu a, #vmenu h2 {
+	display: block;
+	margin: 0;
+	padding: 2px;
+}
+
+#vmenu h2 {
+	color: #08497B;
+	text-transform:capitalize;
+	text-align:right;
+}
+
+#vmenu h2 a{
+	display:block;
+	font: 96%/130% arial, helvetica, sans-serif;
+	background-color:#FFFFFF;
+	color: #08497B;
+	text-transform:capitalize;
+	text-align:right;
+	margin-right:0px;
+}
+
+#vmenu h2:hover {
+	background: #E7EBEF;
+	background-image:url(/images/sideBarTransOver.png);
+	background-repeat:repeat-y;
+	background-position:right;
+	margin-left:-4px;
+}
+
+#vmenu a {
+	color: #08497B;
+	background: #E7EBEF;
+	text-decoration: none;
+	text-align:left;
+	padding: 2px;
+}
+
+#vmenu a:hover {
+	color: #08497B;
+	text-decoration: none;
+	background-image:url(/images/sideBarTransOver.png);
+	background-repeat:repeat-y;
+	background-position:right;
+	margin-left:4px;
+}
+
+#vmenu li {
+	position: relative;
+}
+
+#vmenu ul ul ul{
+	position: absolute;
+	top: 0;
+	width:98%;
+	left: 100%;
+	padding-top: 0px;
+	padding-left:4px;
+	padding-bottom:4px;
+	margin-left:-8px;
+	z-index:5000;
+}
+
+div#vmenu ul ul ul,
+div#vmenu ul ul li:hover ul ul
+{	display: none;
+	text-decoration: none;
+	border-top:thick #E7EBEF solid;
+	border-right: #cdcdcd 2px solid;
+	border-bottom: #cdcdcd 2px solid;
+	}
+
+div#vmenu ul ul li:hover ul,
+div#vmenu ul ul ul li:hover ul
+{	display: block;
+	background-color:#E7EBEF;
+	}
+
+</style>
+<!--[if IE]>
+<style type="text/css" media="screen">
+ #vmenu ul li {float: left; width: 100%;}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<style type="text/css" media="screen">
+body {
+behavior: url(/css/csshover3.htc);
+
+} 
+#vmenu ul li {float: left; width: 100%;}
+#vmenu ul li a {height: 1%;} 
+
+#vmenu a, #vmenu h2 {
+font:96%/130% arial, helvetica, sans-serif;
+} 
+
+</style>

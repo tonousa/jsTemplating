@@ -1,0 +1,76 @@
+#DLnav,
+#DLnav ul			{ list-style: none; margin: 0px; padding: 0;}
+
+#DLnav			{ 
+	
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 13px;
+	color: #333; 
+	height: 1.3em; 
+	line-height: 1.2em; 
+	width: 760px; 
+	}
+	
+#DLnav li			{ 
+	background: #fefefe; 
+	background-image:url(/images/bluDownArrow.jpg);
+	background-position:right;
+	background-repeat: no-repeat;
+	float: left; 
+	height: 1.25em; 
+	width:185px;	
+	margin-left: 25px; 
+	margin-right: 28px;
+	margin-top: 15px;
+	padding: 1px; 
+	border:1px inset #E2E9EF;
+	position: relative; 
+	}
+	
+#DLnav li:hover,
+#DLnav li:focus		{ 
+	background-image:url(/images/bluDownArrowOver.jpg);
+	background-position:right; 
+	background-repeat: no-repeat; }
+	
+#DLnav a			{ 
+	color: #333; 
+	display: block; 
+	padding: 0.1em 6px 0.5em; /* 4px 20px 7px */ 
+	text-decoration: none; }
+
+#DLnav a:hover,
+#DLnav a:focus		{ color: #000; }
+
+#DLnav ul	 	{ 
+	background: #fefefe; 
+	left: 0; 
+	color:#000;
+	font-size: 0.95em; /* 12px / 14px */ 
+	line-height: 1.2em; /* 18px / 12px */ 
+	position: absolute;
+	border:1px solid #999999;
+	border-top:2px solid #E2E9EF;
+	top: 1.5em;  
+	width: 187px; 
+	}
+#DLnav ul li		{ background: none; float: none; height: auto; border:0px; margin:0px; width: 184px; }
+#DLnav ul a		{ background: none; padding: 0.083em 3px 0.15em; /* 1px 4px 3px */ width: 179px; }
+#DLnav ul ul		{ font-size: 1em; }
+
+#DLnav ul a:hover,
+#DLnav ul a:focus		{ background: #6B9ACE; color:#ffffff;}
+#DLnav ul .hover>a	{ background: #6B9ACE; color:#ffffff;}
+
+#DLnav ul ul		{ left: 175px; top: 0.5em; /* 6px / 12px */ }
+
+#DLnav ul,
+#DLnav :hover ul ul,
+#DLnav .hover ul ul	{ margin-left: -9999px; }
+
+#DLnav li:hover>ul,
+#DLnav li.hover>ul,
+#DLnav a:focus+ul,
+#DLnav ul ul,
+#DLnav .hover a:focus	{ margin-left: 0; }
+#DLnav ul a:focus		{ margin-left: 9999px; }

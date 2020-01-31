@@ -1,0 +1,78 @@
+
+.sidebarmenu ul{
+background-color:#FFFFFF;
+padding: 0;
+text-align:right;
+list-style-type: none;
+font: 12px Verdana;
+width: 210px; /* Main Menu Item widths */
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+padding-right:0px;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color:#003366;
+text-decoration: none;
+margin-right:0px;
+padding: 2px;
+
+}
+
+.subMenuIndicator{
+	background-image:url(/images/bullet2.gif);
+	background-repeat: no-repeat;
+	background-position:198px 2px;
+	margin-right:0px;
+	z-index:999;
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+ /*background of links (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color:#003366;
+}
+
+.sidebarmenu ul li a:hover{
+text-decoration:underline;
+
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+text-align:left;
+padding-left:5px;
+border-left: 1px solid #cdcdcd;
+border-bottom: 2px solid #666;
+border-right: 2px solid #666;
+border-top: 1px solid #ccc;
+width: 210px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+.sidebarmenu ul li ul li{
+padding-left:10px;
+
+}
+
+
+.sidebarmenu a.subfolderstyle:hover{
+padding-top:2px;
+padding-bottom:-2px;
+margin-bottom:-2px;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+

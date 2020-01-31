@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+
+.fInput {
+	display: block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	width: 28em;
+}
+
+#verticalForm fieldset
+{
+	display: block;
+	margin: 0 0 2em 2em;
+	padding: 0 0em 1em 3em;
+}
+
+
+
+#verticalForm fieldset.radio label
+{
+	font-weight: normal;
+}
+
+#verticalForm input.textIn
+{
+	display: block;
+	width: 20em;
+	font-size: 12px;
+}
+
+legend {
+	font: bold 96% Verdana, Arial, Helvetica, sans-serif;
+	color:#08497B;
+}
+
+#verticalForm label
+{
+	display: block;
+	Margin-top: 1.35em;
+	margin-bottom: .45em;
+	font: 72% Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#verticalForm label.first
+{
+	padding-top: 1em;
+}
+
+#verticalForm select
+{
+	display: block;
+}
+
+
+.dpsBtn {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-align: center;
+	height: 20px;
+	width: 75px;
+	margin-left:3em;
+	vertical-align: top;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	}
+	
+.helpTip{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:normal;
+	font-style:normal;
+	color: #000000;
+	padding-left: 2px;
+	
+	}
+	
+.inputArea input, .inputArea textarea{
+	font-family:verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #333333;
+	}
+	
+	
+.inputArea input.radio,.inputArea input.checkbox, .inputArea, textarea{
+	
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:normal;
+	color: #333333;
+	
+	}
+	
+input, textarea{
+	border-style:solid;
+	font-size: 12px;
+	border-color: #ffffff;
+	border-width: 0px;
+	
+	}
+	
+input.readonly, textarea.readonly{
+	border-style:solid;
+	border-color: #FFFFFF;
+	border-width: 1px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight:normal;
+	color: #000000;
+	
+	}
+
+input.disabled, textarea.disabled{
+	background-color:#E7E7E7;
+	border-style:solid;
+	border-color: #B2B3B5;
+	border-width: 1px;
+	color: #5b5b5b;
+	}
+input.radioInput, input.checkboxInput{
+	border-style: none;
+	border-width: 0px;
+	border-color: transparent;
+	background-color: transparent;
+	
+	}
+	

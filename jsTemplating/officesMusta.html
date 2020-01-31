@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        .xgroup { margin-top: 7px; color:red;}
+    </style>
+    <link href="Content/camelot.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/mustache.js"></script>
+    <script id="template" type="x-tmpl-mustache">
+        <p>
+            {{address}} {{city}}, TX {{zip}} <br>
+            {{phone}}
+        </p>
+    </script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Scripts/officeList.xml",
+                dataType: "xml",
+                success: addToTable
+            });
+        });
+
+        function addToTable(data) {
+            var jsonObj = {};
+            jsonObj.offices = [];
+            //jsonObj.offices.push({ "address": 'main ave' });
+            //jsonObj.offices.push({ "address": 'broad st' });
+
+            var template = document.getElementById('template').innerHTML;
+            $('#target').empty();
+            //debugger;
+            var currentCity = "";
+            var records = $(data).find('RECORD').each(function () {
+                //console.log(this);
+                var _city = $(this).find('Office_city').text();
+                var _address = $(this).find('Office_address').text();
+                var _zip = $(this).find('Office_zip').text();
+                var _phone = $(this).find('Office_phone').text();
+                
+                _phone = _phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
+                if (_city != "  select a city  ") {
+                    //var addData = {};
+                    //addData.push(city);
+                    //addData.push(address);
+                    jsonObj.offices.push({
+                        address: _address
+                    });
+                    var rendered = Mustache.render(template, {
+                        address: _address,
+                        city: _city,
+                        zip: _zip,
+                        phone: _phone
+                    });
+                    console.log(rendered);
+                    if (currentCity != _city) {
+                        //debugger;
+                        rendered = "<strong>" + _city + "</strong>" + rendered;
+                        currentCity = _city;
+                    }
+                    $('#target').append(rendered);
+                }
+            }); // each
+
+
+
+            console.log(jsonObj);
+            //var html = Mustache.to_html(template, jsonObj);
+            //$('#target').html(html);
+        }
+    </script>
+</head>
+<body>
+    <div id="pagecontainer">
+        <div id="banner">
+        </div>
+        <div id="topNav">
+            <!-- #include file="\includes\cascadeMenu.inc" -->
+        </div>
+        <br />
+        <div id="searchBox">
+            <!-- #include file="\includes\googlesearch.inc" -->
+        </div>
+        <!-- <div id="oneContent"> -->
+        <div id="Content">
+
+            <div id="target">Loading...</div>
+
+        </div>
+        <div id="pageMenu">
+            <!--#include file="ucrMenu.htm" -->
+        </div>
+        <div id="footer">
+            <!--#include file="\includes\footer.inc" -->
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

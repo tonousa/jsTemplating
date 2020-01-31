@@ -1,0 +1,80 @@
+body {
+	color: black;
+	background: white;
+	margin-right: 20px;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+a:link, A:visited {
+	background: white; 
+	color: black; 
+	text-decoration: underline;
+   	font-weight: bold;
+   }
+   
+   
+H1, H2, H3 {
+	background: white; 
+	color: black; 
+	padding-bottom: 1px;
+   	border-bottom: 1px solid gray;
+   }
+   
+ #appBanner {
+		display: none;
+	}
+	
+ #footer {
+		display: none;
+	}
+
+	
+#Menu {
+		display: none;
+	}
+	
+#Menu a {
+	text-decoration: none;
+	display: none;
+}
+
+#Menu a:link {
+	text-decoration: none;
+	display: none;
+}
+
+#Menu a:hover {
+	text-decoration: none;
+	display: none;
+}
+	
+#Menu a:visited {
+	text-decoration: none;
+	display: none;
+}
+
+#Menu ul { /* remove bullets and list indents */
+	text-decoration: none;
+	display: none;
+	list-style: none;
+	}
+	
+div.topNavBox {
+	display:none;
+	}
+ul.topNavList {
+	display:none;
+	list-style-type: none;
+	}
+ul.topNavList li a, a:link, a:visited {
+	display:none;
+	text-decoration: none;
+	list-style-type: none;
+	}
+	
+	
+	#topNavList li{
+	display: inline;
+	list-style-type: none;
+	}

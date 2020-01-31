@@ -1,0 +1,60 @@
+/* the news box */
+#news
+{
+	height:30px;
+	padding:2px;
+	width:290px;
+	background-color:#CC0000; 
+}
+
+#news a
+{
+	text-align:center;
+	color:#000;
+}
+
+#news ul
+{
+	margin:0;
+	padding:0;
+}
+
+#news li{
+font: bold 78% Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	list-style:none;
+	line-height:3em;
+}
+
+/* the news box when JavaScript is available */
+#news.hasJS
+{
+	font: bold 104% Verdana, Arial, Helvetica, sans-serif;
+
+	background-color:#CC0000; 
+	border:#CC0000 medium solid;
+	height:30px;
+	overflow:hidden;
+	position:relative;
+	padding-top:0px;
+	padding-left:6px;
+	width:430px;
+}
+
+#news.hasJS a
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+/* The scrolling element (nested UL) when JavaScript is available */
+#news.hasJS ul
+{
+	border:#999999 medium double;
+	background-color:#FFFFFF;
+	text-align:center;
+	width:288px;
+	position:absolute;
+	top:50px;
+	left:132px;
+	padding:0;
+}

@@ -1,0 +1,153 @@
+TD
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt
+}
+P
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt
+}
+A
+{
+    COLOR: #333366;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    COLOR: #006699;
+    TEXT-DECORATION: none
+}
+.whitelink
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    TEXT-DECORATION: none
+}
+.whitelink:hover
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+.whitelink2
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none
+}
+.whitelink2:hover
+{
+    TEXT-DECORATION: none
+}
+.darkbluelink
+{
+    COLOR: #006699;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none
+}
+.darkbluelink:hover
+{
+    TEXT-DECORATION: none
+}
+.darkbluelink:visited
+{
+    COLOR: #006699
+}
+.blacklink
+{
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt;
+    TEXT-DECORATION: none
+}
+.blacklink:hover
+{
+    TEXT-DECORATION: none
+}
+.blacklink:visited
+{
+    COLOR: #000000
+}
+.datetime
+{
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10px
+}
+SELECT.resize
+{
+    WIDTH: 143px
+}
+TEXTAREA
+{
+    HEIGHT: 80px;
+    WIDTH: 350px
+}
+.sectionname
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 24pt;
+    FONT-WEIGHT: bold
+}
+BODY
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt
+}
+DIV
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt
+}
+.error
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 14pt
+}
+.headings
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: bold
+}
+.subheadings
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold
+}
+.confidential
+{
+    FONT-FAMILY: Times New Roman;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold
+}
+TH
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold
+}
+.messagelink
+{
+    COLOR: red
+}
+.messagelink:hover
+{
+    COLOR: #006699
+}
+.messagelink:visited
+{
+    COLOR: #333366
+}
+.sectionname2
+{
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 19pt;
+    FONT-WEIGHT: bold
+}

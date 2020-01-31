@@ -1,0 +1,61 @@
+<html xmlns:spry="http://ns.adobe.com/spry">
+<style type="text/css">
+		@import "/css/domnews.css";
+    </style>
+<script type="text/javascript" src="/js/domnews.js"></script>
+<script src="../SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryData.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+var ds1 = new Spry.Data.XMLDataSet("/dem/Amber/alerts.xml", "alerts/alert");
+
+//-->
+</script>
+<form   method="get" action="/search/searchresults.asp">
+  <div spry:region="ds1">
+
+<div id="news" style="visibility:{ds1::visible};">
+<a href="/dem/amber/details.asp">{ds1::alertType}
+	<ul >
+		<li>{ds1::alertType}</li>
+		<li>{ds1::alertName}</li><br />	
+	</ul></a>
+</div>
+</div>
+<label for="Search" style="font-size:8pt; color:#ffffff;">Enter Text Below</label><br />
+<input 
+	style="font-size:11px; 
+	font-weight:600; 
+	color:#08497B; 
+	height:13px; 
+	margin-top:1px;	
+	margin-bottom:0px;
+	margin-left:6px;	
+	padding-bottom:2px;
+	padding-left:2px; 
+	border:solid 1px #6B92B5;
+    z-index:1050;"
+	type="text" 
+	name="q" 
+	size="17" 
+	maxlength="200" 
+	alt="Search DPS " 
+	id="Search" 
+	value="Search DPS" 
+	onfocus="if (this.value=='Search DPS'){this.value='';};return false;" onBlur="if (this.value==''){this.value='Enter text here';return false;}"/>
+<input type="image" style="margin-left:-4px; height:19px; margin-top-2px; margin-right:10px; cursor:pointer; vertical-align:middle;" name="btnG" src="/images/searchBtn.png" alt="Search DPS" id="Image1" />
+
+     
+    <input type="hidden" name="site" value="DPSInternet" /> <!--value="ER" />-->
+    <input type="hidden" name="client" value="DPSInternet" /> 
+    <input type="hidden" name="proxystylesheet" value="DPSInternet" /> 
+    <input type="hidden" name="output" value="xml_no_dtd" /> 
+    <input type="hidden" name="getfields" value="title.keywords" />
+    <!--<input type="hidden" name="getfields" value="" />-->
+    <!--<input type="hidden" name="restrict" value="ER"/>-->
+
+
+</div>
+   </form> 
+   <br />

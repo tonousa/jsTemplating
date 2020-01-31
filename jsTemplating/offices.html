@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        .xgroup { margin-top: 7px; color:red;}
+    </style>
+    <link href="/Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+    <!--<link href="../Content/DataTables/css/rowGroup.dataTables.css" rel="stylesheet" />-->
+    <link href="Content/camelot.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.8.3.js"></script>
+    <script src="/Scripts/DataTables/jquery.dataTables.js"></script>
+    <script src="/Scripts/DataTables/dataTables.rowGroup.js"></script>
+    <script>
+        var outputTable;
+
+        $(document).ready(function () {
+            var groupColumn = 0;
+            outputTable = $('#records').dataTable({
+                "columnDefs": [{"visible": false, "targets": groupColumn }],
+                "order": [[ groupColumn, "asc" ]],
+                "paging": false,
+                "ordering": false,
+                "drawCallback": function (){
+                    var api = this.api();
+                    var rows = api.rows({ page: 'current' }).nodes();
+                    var last = null;
+
+                    api.column(groupColumn, { page: 'current' }).data().each(function (group, i) {
+                        if (last != group) {
+                            $(rows).eq(i).before(
+                                '<tr class="group"><td colspan="2">'+ group + '</td></tr>'
+                            );
+                            last = group;
+                        }
+                    });
+                }
+            });
+
+            $.ajax({
+                type: "GET",
+                url: "/Scripts/officeList.xml",
+                dataType: "xml",
+                success: addToTable
+            });
+        });
+
+        function addToTable(data) {
+            var output = "";
+            //debugger;
+            var records = $(data).find('RECORD').each(function () {
+                //console.log(this);
+                var city = $(this).find('Office_city').text();
+                var address = $(this).find('Office_address').text();
+                var zip = $(this).find('Office_zip').text();
+                var phone = $(this).find('Office_phone').text();
+                address = address + " " + city + ", TX " + zip + "<br>" + phone;
+                if (city != "  select a city  ") {
+                    var addData = [];
+                    addData.push(city);
+                    addData.push(address);
+                    //addData.push(phone);
+                    outputTable.fnAddData(addData);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div style="width:50%">
+        <table id="records" width="100%">
+            <thead>
+                <tr>
+                    <th>city</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

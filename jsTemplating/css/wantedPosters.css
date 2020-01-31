@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+
+	form {
+		margin-top:-5px;
+		
+		}
+		
+	h2 {
+		margin-top:-5px;
+		font-size:25px;
+		}
+    
+	
+	.timeTxtLblClass {
+      display:none;
+      }
+	
+
+	.containerStyle{
+	position:relative;
+		height:100px; 
+		font-size:86%;
+		margin-top:-10px;
+	}
+	
+    .fugiDiv
+    {
+	   width:174px;
+	   height:486px;
+       float:left;
+       margin:1px;
+       padding:1px;
+       border:solid 1px #8c959a;
+       text-align:center;
+        } 
+        
+    .fugiDiv a
+    { 
+        text-decoration:none;
+        }
+		
+	  .fugiDiv a:hover
+    { 	display:block;
+		height:100%;
+		background-color:#e2f1fa;
+        text-decoration:none;
+        }
+		
+	 #statusLabelDiv
+    { 
+		position:relative;
+       top:0px;
+       left:4px;
+	   height:10px;
+	   width:170px;
+       text-align:center;
+       margin-bottom:2px;
+       z-index:9999;
+	  /* -moz-transform: rotate(-4deg);                 /*FF*/    
+	    -o-transform: rotate(-4deg);                   /*Opera*/     
+		-webkit-transform: rotate(-4deg);              /*Safari, Chrome*/     
+		-ms-transform: rotate(-4deg) !important;       /*IE9*/        
+		 transform: rotate(-4deg);                      /*CSS3 default*/     
+		 background-color:transparent;	*/
+      } 
+     
+    .statusLabelClass
+     {
+	   display:block;
+	   position:relative;
+		top:-168px;
+	   font-family:Arial, Arial, Helvetica, sans-serif;
+       font-size: 20px;
+       font-weight: 900;
+	   text-transform:Uppercase;
+	   width:160px;
+	   color:#dc293c;
+		z-index:9999;
+      }
+      
+    #rewardPaidDiv
+    { 
+	   position:relative;
+       left:0px;
+	   height:1px;
+	   text-align:center;
+       margin-bottom:0px;
+       z-index:9900;
+	 } 
+     
+    .rewardPaidLabel
+     {
+	  background-color:#63cc40;
+	  display :block;
+	  position:relative;
+	  top:-26px;
+	  font-family:Arial, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+	  width:175px;
+	  color:#fefefe;
+      margin-bottom:1px;
+	  z-index:9900;
+	}
+	     
+        
+   #featuredLabelDiv
+    {
+	   height:12px;
+       display:block;
+       width:175px;
+	   text-align:center;
+       margin-bottom:2px;
+      z-index:9966;
+      } 
+     
+    .featuredLabelClass
+     {
+	  display:block;
+	  position:relative;
+       top:34px;
+       left:0px;
+	  background-color:#c01f2f;
+       font-family:Georgia1, Georgia, serif;
+       font-size: 14px;
+       font-style:italic;
+	   font-weight: 600;
+	   color:#fefefe;
+       margin-bottom:2px;
+	   padding:2px;
+      }
+	  
+	  select 
+	    {   
+		color:#2c4972;  
+		font-weight: bold;   
+		} 
+	  
+	  	.selectDiv
+	    {
+		
+		width:147px;
+		text-align:right; 
+		margin-right:50px; 
+		margin-top:2px; 
+		margin-bottom:2px;
+		color:#2c4972;
+		
+		
+	    }
+		
+		.selectDivHolder
+	    {
+		position:absolute;
+		background-image:url('/images/menuRibbonBlueRT.png');
+		background-position:top right;
+		background-repeat:no-repeat;
+		width:229px;
+		float:right;
+		width:948px;
+		height:44px;
+		text-align:right; 
+		margin-right:-12px; 
+		margin-top:0px; 
+		margin-bottom:-30px;
+		color:#2c4972;
+		padding:4px;
+		z-index:999;
+	    }
+	  
+	  
+	 .featuredLabelClassBorder
+     {
+	 position:relative;
+	 display:inline-block;
+		top:-39px;
+		left:-1px;
+	   width:172px;
+	   height:486px;
+	   border:solid 2px #ff0000;
+	   z-index:9999;
+      }
+        
+    .nameDiv
+    {
+	  margin:0px; 
+	  margin-bottom:2px;
+      background-color:#d7d6d6;
+      border:solid 1px #dedede;
+      text-align:center;
+     }   
+             
+    #wantedForDiv
+    {
+	display:block;
+	top:-10px;
+       width:auto;
+	height:110px;
+       padding-top:0px;
+       padding-left:2px;
+       padding-right:2px;
+     } 
+	 
+	 #raceSexDobDiv{
+	 position:relative;
+	 top:-10px;
+	  }
+     
+	 #htWtDiv{
+	 position:relative;
+	 top:-10px;
+	 }
+	 
+      #gangDiv
+    {
+	   height:28px;
+       padding:1px;
+     }
+	 
+      #lkaDiv
+    {
+	   height:32px;
+       padding:2px;
+     }
+        
+  .clear
+     {
+      clear:both;
+      }
+         
+  .fName 
+  {
+	   font-family:Arial, Helvetica, sans-serif;
+	   font-size: 80%;
+	   font-weight: 500;
+	   color:#000000;
+	   text-transform: capitalize;
+	   padding-top: 1px;
+	   padding-bottom: 1px;
+	}
+	
+    .lName 
+	{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 96%;
+	    font-weight: 700;
+	    color:#222222;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-bottom: 2px;
+	}
+	
+	 .label 
+	 {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 72%;
+	    font-weight: 500;
+	    color:#000000;
+	    padding-top: 2px;
+	  padding-bottom: 2px;
+	   
+	}
+	.strongLabel 
+	{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 76%;
+	    font-weight: 700;
+	    color:#000;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-bottom: 2px;
+	}
+	
+	 .bigRedLabel 
+	 {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 90%;
+	    font-weight: 600;
+	    color:#c01f2f;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	}
+            
+  .subhead 
+  {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 110%;
+	    font-weight: 700;
+	    color:#2f5481;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	}
+	
+	.validatorMessage 
+	{
+	    display:block;
+	    font-family:Arial, Helvetica, sans-serif;
+	    background-color:Red;
+	    font-size: 90%;
+	    font-weight: 700;
+	    color:#fefefe;
+	    text-transform: capitalize;
+	    padding-left: 4px;
+	    margin:2px;
+	}
+
+	
+.detailText 
+    {
+		font-size: 106%;
+	    font-weight: 600;
+		color:#444;
+	}
+	
+.searchFieldLabel 
+	{
+	    font-family:Helvetica, Arial, sans-serif;
+		font-size: 86%;
+	    font-weight: 600;
+		color:#666;
+	}
+	
+.searchFieldContainer
+	{
+	    margin-left:20px;
+	    margin-right:auto;
+	    width:690px;
+	    }
+	
+div.float {
+	float: left;
+	text-indent: 2px;
+	width:337px;
+	padding: 2px;
+	margin:0px;	
+	}
+    
+
+ .selRow
+      {
+      background-color: Yellow;
+        }
+
+	 .imageLifter{
+	margin-top:-6px;
+	
+		  }
+	
+  #bannerWide img{
+   height:0px;
+   width:0px;
+   
+   }
+   
+   div.bnrText {
+	float: left;
+	text-indent: 2px;
+	width: 375px;
+	padding: 2px;
+	margin:0px;	
+}
+
+#listWidth{
+	width:915px;
+	}
+   

@@ -1,0 +1,795 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color: black;
+	margin: 0px;
+	padding:0px;
+	}
+
+   
+H1, H2, H3 {
+	font: bold 130% Verdana, Arial, Helvetica, sans-serif;
+	color: black; 
+	padding-bottom: 1px;
+	}
+   
+   
+  .timeTxtLblClass {
+	 position:relative;
+	 top:-54px;
+	 margin-left:335px;
+	 font:bold 14px/14px Verdana, Helvetica, Arial, sans-serif;
+	 color:#333;
+	 height:0px;
+     }
+	 
+
+form{
+	margin:0px;
+	padding:0px;
+	}
+   
+	#form1{
+	position:relative;
+	top:-34px;
+	left:-18px;
+	width:910px;
+	margin-bottom:0px;
+	padding:0px;
+	}
+	
+	#form2 {
+	position:relative;
+	top:-34px;
+	left:-18px;
+	right:auto;
+	width:910px;
+	margin-bottom:0px;
+	padding:0px;
+	height:1000px;
+	}
+
+	#form3 {
+	position:relative;
+	top:66px;
+	left:-4px;
+	right:auto;
+	width:910px;
+	margin-bottom:0px;
+	padding:0px;
+	height:1000px;
+	}
+	
+	#formDetail {
+	position:relative;
+	width:850px;
+	top:0px;
+	left:-10px;
+	height:1100px;
+	
+	
+	}	
+	#topTextHolder p{
+	position:relative;
+	top:-10px;
+	font: normal 74% Verdana, Arial, Helvetica, sans-serif;
+	
+	}
+   
+ #appBanner, #pageMenu, #topNav, #btn_Filter, #controlDiv,  #search , #searchBox, #searchBoxWide,  #footer, #footerWide, #topNavList, #topNavBox, #topNavWide, #ddForm, #jumpMenu, .controlLabelBtn, .showFilter, .toggle, .linkDisplay {
+		display: none;
+	}
+	
+	#widePageContainer 
+	{
+		width: 910px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+		height:1265px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:left;
+		padding:2px;
+		/* the auto margins (in conjunction with a width) center the page */
+		border: 1px solid #dedede;
+	}
+
+	  
+
+  
+  #oneContentWide  h2 
+	{
+	display:none;
+	}
+  
+  #bannerWide{
+  height:119px;
+  width: 910px;
+  }
+	
+
+   #bannerWide img{
+   
+   display: block;
+   width: 910px;
+	height: 119px;
+	margin:0px;
+	padding:0px;
+   } 
+   
+
+	
+ #nameDiv
+     {
+         width:760px;
+		line-height:36px;
+		 padding:2px;
+         border-bottom:solid 1px #dedede;
+         text-align:center;
+		 margin-top:4px;
+		 margin-bottom:2px;
+         margin-left:auto;
+         margin-right:auto;
+         }
+		 
+.bigNameLabel
+    {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 34px;
+	  font-weight: 700;
+	  margin-bottom:2px;
+     
+     }
+	 
+	 
+		 
+#imgHolder
+     {
+      position:relative;
+      float:left;
+      left:4px;
+      padding:8px;
+      margin:6px;
+      width:244px;
+      height:300px;
+      background-color:White;
+      border-bottom:solid 2px #cccccc;
+      border-right:solid 2px #cccccc;   
+      text-align:center;
+         }
+		 
+	.fugiPic {
+	position:relative;
+	margin-top:8px;
+		width:220px;
+		height:280px;
+		}
+		 
+.altImage{
+    position:relative;
+      float:left;
+      left:2px;
+      width:220px;
+		height:280px;
+	  z-index:9900;
+       }
+
+ .imageLifter{
+	margin-top:-8px;
+	
+		  }
+
+	   
+	div.toggle{
+	position:absolute;
+      float:left;
+      left:-4px;
+	  top:0px;
+      padding:6px;
+      margin:6px;
+      width:260px;
+      height:300px;
+      background-color:White;
+      text-align:center;
+	  z-index:9999;
+	}
+
+	.listWidth {
+		position:relative;
+		margin-top:-20px;
+		padding-left:4px;
+		height:1030px;
+		
+		}
+		 
+#posterHolder{
+position:relative;
+	margin-top:-12px;
+	margin-left:-10px;
+	width:860px;
+	height:1030px;
+	
+	}
+	
+	#posterContainer
+    {
+        width:860px;
+        height:1110px;
+       
+        
+        }
+	#cAgencyDiv{
+	 font:normal 13px/13px Verdana, Helvetica, Arial, sans-serif;
+	}	
+
+	#locDiv{
+	 font:normal 13px/13px Verdana, Helvetica, Arial, sans-serif;
+	}
+	#capDate{
+	 font:normal 13px/13px Verdana, Helvetica, Arial, sans-serif;
+	}
+
+#detailContainer{
+	position:relative;
+	top:28px;
+	
+	}
+		 		 
+	  #detailItems
+      {
+         display:block;
+		 float:left;
+         width:414px;
+		 line-height:16px;
+         height:590px;
+		 margin-top:6px;
+		 
+		 }
+         
+      .labelText
+      {
+        position:absolute;
+		display:block;
+		width:150px;
+		margin:1px;
+		height:14px;
+        font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+	    font-weight: 600;
+	    text-transform:uppercase;
+		color:#000; 
+		text-align:right;
+		z-index:9999;
+          }
+		  
+     .detailText 
+    {	
+		display:block;
+		background-color:#fbfbfb;
+		width:408px;
+		line-height:17px;
+		height:20px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	    font-weight: 500;
+	    text-align:left;
+	    margin-left:162px;
+		padding-left:2px;
+		padding-right:2px;
+	    text-transform:capitalize;
+		border-top:solid 1px #ffffff;
+		border-bottom:solid 1px #dedede;
+		color:#333;
+	}
+	
+	.detailText2 
+    {	
+		display:block;
+		background-color:#fbfbfb;
+		width:408px;
+		line-height:17px;
+		height:64px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	    font-weight:500;
+	    text-align:left;
+	    margin-left:162px;
+		padding-left:2px;
+		padding-right:2px;
+		border-top:solid 1px #ffffff;
+		border-bottom:solid 1px #dedede;
+	    text-transform:capitalize;
+		color:#333;
+	}
+	
+	.detailText3 
+    {	
+		display:block;
+		background-color:#fbfbfb;
+		width:408px;
+		line-height:17px;
+		height:80px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	    font-weight:500;
+	    text-align:left;
+	    margin-left:162px;
+		padding-left:2px;
+		padding-right:2px;
+	    text-transform:capitalize;
+		border-top:solid 1px #ffffff;
+		border-bottom:solid 1px #dedede;
+		color:#333;
+	}
+	
+	.detailLabelText 
+    {	
+		width:150px;
+		height:24px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+	    font-weight:600;
+	    text-align:left;
+	    margin-left:6px;
+	    text-transform:uppercase;
+		color:#333;
+	}
+	
+	.FinalDetailsText 
+    {
+		display:block;
+		background-color:#fbfbfb;
+		margin-left:6px;
+		width:830px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height:22px;
+	    font-weight: 500;
+		padding:4px;
+		color:#444;
+	}
+	
+	#detailsDiv{
+		width:840px;
+		margin-left:auto;
+		margin-right:auto;
+		
+	}
+
+	#capDetailsDiv{
+		width:840px;
+		margin-left:auto;
+		margin-right:auto;
+		
+	}
+   
+/*for the text banner /////////////////////////// */
+
+	.containerStyle{
+	position:relative;
+	top:-24px;
+	}
+   
+  #container{
+  font-size:78%;
+  position:relative;
+
+	width:854px;
+	margin-top:-26px;
+	padding-top:4px;
+	 Margin-bottom:6px;
+	 
+	 }
+
+  
+  #container img{
+	padding-top:6px;
+	width:78px;
+	height:72px;
+  }
+  
+  #Datalist2{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+  }
+  
+  div.float {
+	float: left;
+	text-indent: 2px;
+	width: 154px;
+	padding-top: 2px;
+	margin:0px;	
+}
+   
+  div.bnrText {
+	float: left;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:84%;
+	height:100px;
+	text-indent: 2px;
+	width: 355px;
+	padding-top: 0px;
+	margin-top:4px;
+	
+}
+	.bigRedRewardLabel{
+		display:block;
+	   position:relative;
+       top:-2px;
+       left:0px;
+	   background-color:#c01f2f;
+       font-family:Georgia1, Georgia, serif;
+       font-size: 13px;
+       font-style:italic;
+	   font-weight: 700;
+	   color:#fefefe;
+       margin-bottom:1px;
+	   padding:3px;
+		}
+
+
+div.spacer {
+	height:0px;
+  	clear: both;
+  }
+  
+	
+.posterLink {
+		display: none;
+	}
+	
+	 .fugiDiv
+    {
+	   width:168px;
+	   height:482px;
+       float:left;
+       margin:1px;
+       padding:1px;
+       border:solid 1px #8c959a;
+       text-align:center;
+       
+        } 
+		
+	.fugiDiv img
+    { 
+        width:96px;
+        }
+		
+	  .fugiDiv a
+    { 
+        text-decoration:none;
+		color:#333;
+        }
+        
+   #featuredLabelDiv
+    {
+	   position:relative;
+       top:0px;
+       left:0px;
+	   width:158px;
+	   height:12px;
+	   text-align:center;
+       margin-bottom:2px;
+       z-index:9966;
+      } 
+	  
+#featuredLabelDiv2
+	{
+	   position:relative;
+       top:64px;
+       left:9px;
+	   height:1px;
+       display:block;
+       width:265px;
+	   text-align:center;
+       margin-bottom:2px;
+       z-index:9999;
+      } 
+	  
+    .featuredLabelClass
+     {
+		display:block;
+		position:relative;
+		top:38px;
+	 	background-color:#c01f2f;
+       font-family:Georgia1, Georgia, serif;
+       font-size: 14px;
+       font-style:italic;
+	   font-weight: 600;
+	   width:156px;
+	   color:#fefefe;
+       margin-bottom:2px;
+	   padding:2px;
+      }
+	  
+	.featuredLabelClass2
+     {
+	    display:block;
+	    background-color:#c01f2f;
+       font-family:Georgia1, Georgia, serif;
+       font-size: 18px;
+       font-style:italic;
+	   font-weight: 600;
+	   color:#fefefe;
+       margin-bottom:2px;
+	   padding:3px;
+      }
+	  
+	  
+	.featuredLabelClassBorder
+     {
+	position:relative;
+	 display:inline-block;
+		top:-38px;
+		left:-1px;
+	   width:166px;
+	   height:482px;
+	   border:solid 2px #ff0000;
+	   z-index:9999;
+		
+      }
+	  
+	   .featureNoticeImg
+	  {
+	  position:absolute;
+		top:340px;
+		left:-18px;
+	  z-index:9999;
+	  
+	  }
+	  
+	.featuredNoticelabel
+    {
+	   position:absolute;
+		top:352px;
+       left:0px;
+	   width:250px;
+ 		height:50px;
+	   font-size:72%;
+	   font-weight: 600;
+       display:block;
+       background-color:#dedede;
+	   border:solid 1px #ff0000;
+       margin-bottom:2px;
+	   text-align:center;
+       padding:6px;
+      }
+	  
+ #statusLabelDiv
+    { 
+	position:relative;
+       top:0px;
+       left:0px;
+	   height:1px;
+       text-align:center;
+       margin-bottom:2px;
+       z-index:9999;
+
+      } 
+	  
+	  #statusLabelDiv2
+    { 
+		height:1px;
+	   position:relative;
+	   width:250px;
+       top:10px;
+	   left:20px;
+       text-align:Center;
+       margin-bottom:2px;
+       z-index:9999;
+	  /* -webkit-transform: rotate(-6deg); 
+	  -moz-transform: rotate(-6deg);*/
+      } 
+     
+    .statusLabelClass
+     {
+	   display:block;
+	   position:relative;
+	   top:-168px;
+	   font-family:Arial, Arial, Helvetica, sans-serif;
+       font-size: 16px;
+       font-weight: 800;
+	   text-transform:uppercase;
+		width:160px;
+	   color:#c01f2f;
+		 z-index:9999;
+      }
+	  
+	.statusLabelClass2
+     {
+		display:block;
+		font-family:Arial, Arial, Helvetica, sans-serif;
+       font-size: 32px;
+      font-weight: 800;
+	   text-transform:uppercase;
+	  line-Height:50px;
+	   color:#c01f2f;
+       margin-bottom:2px;
+	  /* border:dotted 1px #c01f2f;
+	  -moz-border-radius: 6px;
+		border-radius: 6px; */
+		text-align:Center;
+		text-decoration: underline overlie;
+	   padding-top:0px;
+	   padding-bottom:0px;
+	   } 
+	  
+	  
+	   #rewardPaidDiv
+    { 
+	   position:relative;
+       left:-1px;
+	   height:1px;
+	   text-align:center;
+       margin-bottom:0px;
+       z-index:9900;
+	 } 
+	 
+	 #rewardPaidDiv2
+    { 
+	  height:1px;
+	   position:relative;
+	   width:265px;
+      top:290px;
+	  left:8px;
+       text-align:Center;
+       margin-bottom:2px;
+       z-index:9999;
+	 } 
+     
+    .rewardPaidLabel
+     {
+	  background-color:#63cc40;
+	  display :block;
+	  position:relative;
+	  top:-22px;
+	  font-family:Arial, Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+	  width:168px;
+	  color:#fefefe;
+      margin-bottom:2px;
+	  z-index:9900;
+	}
+	
+	  .rewardPaidLabelClass2
+     {
+	  display :block;
+	  font-family:Arial, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      background-color:#63cc40;
+      font-weight: 700;
+	  color:#fefefe;
+      margin-bottom:2px;
+      padding:6px;
+	
+	}	
+	     
+	  
+	  
+	 .strongLabel 
+	{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 76%;
+	    font-weight: 700;
+	    color:#000;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-bottom: 2px;
+	}
+	
+	 #wantedForDiv
+    {
+       display:block;
+       width:auto;
+	   height:110px;
+       padding-top:4px;
+       padding-left:2px;
+       padding-right:2px;
+     } 
+	  #gangDiv
+    {
+	   height:28px;
+       padding:1px;
+     }
+	 
+     #lkaDiv
+    {
+	   height:32px;
+       padding:2px;
+     }
+	
+	 .bigRedLabel 
+	 {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 90%;
+	    font-weight: 600;
+	    color:#c01f2f;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	}
+	
+	.biggerRedLabel
+     {
+         display:block;
+         width:720px;
+		 line-height:30px;
+		margin-left:auto;
+         margin-right:auto;
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 32px;
+	    font-weight: 700;
+	    color:#c01f2f;
+	    text-transform: capitalize;
+	    text-align:center;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	}
+	  
+.nameDiv 
+    {
+	font: bold 94%  Arial, Helvetica, sans-serif;
+	  margin:0px; 
+	  margin-bottom:2px;
+      background-color:#d7d6d6;
+      border:solid 1px #dedede;
+      text-align:center;
+     }   
+        
+  .nameDiv a
+    {
+	font: bold 82%  Arial, Helvetica, sans-serif;
+	  margin:0px; 
+	  margin-bottom:2px;
+      background-color:#d7d6d6;
+      border:solid 1px #dedede;
+      text-align:center;
+     }   
+	 .fName 
+  {
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 83%;
+	    font-weight: 600;
+	    color:#000000;
+	    text-transform: capitalize;
+	    padding-top: 1px;
+	    padding-bottom: 1px;
+	}
+	
+    .lName 
+	{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 110%;
+	    font-weight: 700;
+	    color:#222222;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+	    padding-bottom: 2px;
+	}
+	
+	 .label 
+	 {
+	    font-family:Arial, Helvetica, sans-serif;
+		line-height:16px;
+	    font-size: 72%;
+	    font-weight: 500;
+	    color:#000000;
+	    text-transform: capitalize;
+	    padding-top: 2px;
+		padding-bottom: 2px;
+	   
+	}
+	
+	#bottomDiv{
+		display:inline-block;
+		margin-top:-25px;
+		padding-left:10px;
+		width:870px;
+		
+	}
+
+	
+	

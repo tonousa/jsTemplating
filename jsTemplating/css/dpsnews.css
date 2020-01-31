@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+rss {
+	background-color:#FFFFFF;
+	margin: 0px;
+	}
+	
+channel{
+	display: block;
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0px;
+}
+
+item {
+	background-color: #ffffff;
+	display: block;
+	margin-bottom: 10pt;
+}
+
+Language {
+	display:none;
+}
+
+title {
+	display: block;
+	color: #FF0000;
+	font:11px/18px verdana, arial, helvetica, sans-serif;
+	font-weight:500;
+	margin:4px;
+}
+
+link {
+	display:none;
+	color:#29578F;
+	font-size:10px;
+	text-decoration:none;
+	font-weight:500;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+pubDate {
+	color: #666666;
+	font:9px/16px verdana, arial, helvetica, sans-serif;
+	margin:4px;
+}
+
+description{
+	display: block;
+	font:10px/18px verdana, arial, helvetica, sans-serif;
+	margin:4px;
+	padding:2px;
+	color:#333333;
+}
+
+guid {
+	display:none;
+	}

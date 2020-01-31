@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="jquery-1.8.3.js"></script>
+    <script src="DataTables/jquery.dataTables.js"></script>
+    <script>
+        var outputTable;
+
+        $(document).ready(function () {
+            outputTable = $('#records').dataTable({
+                "sPaginationType": "full_numbers",
+                "bJQueryUI": true
+            });
+
+            $.ajax({
+                type: "GET",
+                url: "data.xml",
+                dataType: "xml",
+                success: addToTable
+            });
+        });
+
+        function addToTable(data) {
+            var output = "";
+            debugger;
+            var records = $(data).find('record').each(function () {
+                console.log(this);
+                var fname = $(this).find('firstName').text();
+                console.log(fname);
+                var lname = $(this).find('lastName').text();
+                output = fname + " " + lname;
+
+                var addData = [];
+                addData.push(fname);
+                addData.push(lname);
+                outputTable.fnAddData(addData);
+            });
+        }
+    </script>
+</head>
+<body>
+    <table id="records">
+        <thead>
+            <tr>
+                <th>firstName</th>
+                <th>firstName</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

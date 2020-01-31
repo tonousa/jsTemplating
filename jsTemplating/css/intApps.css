@@ -1,0 +1,592 @@
+   <style>
+
+   body
+        {
+       background-image:url('/images/grey1.png');
+       background-repeat:repeat;
+       margin:0px;
+       padding:0px;
+        }
+	
+   #tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 2px solid #111;
+	background-color: #eee;
+	padding: 6px;
+	opacity: 0.85;
+}
+#tooltip h3, #tooltip div { margin: 0; }
+	 
+    #content
+    {
+    background-color:#fefefe;
+    margin-top:0px;
+    margin-left:0px;
+    padding:10px;
+    text-align:left;
+    }
+     
+    .label
+    {
+    display:block;
+    width:180px;
+    font:bold 12px/38px Georgia,serif;
+    text-align:right;
+   }
+   
+  label {
+  float:left;
+  width:25%;
+  margin-right:0.5em;
+  padding-top:0.2em;
+  text-align:right;
+  font-weight:bold;
+  }
+
+   
+ 
+   
+   legend {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	font-variant: normal;
+	text-transform: capitalize;
+	color: #999999;
+}
+    
+    .linkBtn
+    {
+    display:inline;
+	background:url('/images/grnSmoothBtn.png') no-repeat center;
+    background-color:#fefefe;
+    margin:4px;
+    width:150px;
+	 height:50px;
+    font:.98em/1.5em bold Arial, Helvetica, sans-serif ;
+     font-weight:800;
+	color:white;
+    text-decoration:none;
+    padding:6px;
+   
+    }
+	
+	.linkBtn:hover
+    {
+    display:inline;
+	background:url('/images/grn2SmoothBtn.png') no-repeat center;
+    background-color:#fefefe;
+    margin:4px;
+    width:150px;
+	 height:50px;
+    font:.98em/1.5em bold Arial, Helvetica, sans-serif ;
+     font-weight:800;
+	color:white;
+    text-decoration:none;
+    padding:6px;
+   
+    }
+	
+	.linkBtnCncl
+    {
+    display:inline;
+	background:url('/images/orangeSmoothFlat.png') no-repeat center;
+    background-color:#fefefe;
+    margin:4px;
+    width:150px;
+	height:50px;
+    font:.98em/1.5em bold Arial, Helvetica, sans-serif ;
+    font-weight:800;
+	color:white;
+    text-decoration:none;
+    padding:6px;
+   
+    }
+	
+	.linkBtnCncl:hover
+    {
+    display:inline;
+	background:url('/images/orange2SmoothFlat.png') no-repeat center;
+    background-color:#fefefe;
+    margin:4px;
+    width:150px;
+	 height:50px;
+    font:.98em/1.5em bold Arial, Helvetica, sans-serif ;
+     font-weight:800;
+	color:white;
+    text-decoration:none;
+    padding:6px;
+   
+    }
+	
+	
+	    .previewBtn { 
+		display:inline;
+        font:.98em/1.5em bold Arial, Helvetica, sans-serif ;
+        font-weight:800;
+        background:url('/images/bluSmoothFlat.png') no-repeat center;
+        width:150px;
+        height:50px;
+        color:white; 
+		text-decoration:none;
+        border:0px;
+		padding:6px;
+        } 
+
+        .previewBtn:hover{ 
+		display:inline;
+        font:.98em/1.5em bold Arial, Helvetica, sans-serif;
+        font-weight:800;
+        background:url('/images/blu2SmoothFlat.png') no-repeat center;
+        width:150px;
+        height:50px;
+        color:white; 
+		text-decoration:none;
+        border:0px;
+		padding:6px;
+        } 
+	
+	
+    
+     .tBox75 {
+     display:block;
+    width:75px;
+    margin-left:190px;
+    margin-top:-29px;
+    }
+    
+    .tBox200 {
+    display:block;
+    width:200px;
+    margin-left:190px;
+    margin-top:-29px;
+    }
+    
+     .tBox400 {
+     display:block;
+    width:400px;
+    margin-left:190px;
+    margin-top:-29px;
+    }
+    
+      .tBox600 {
+      display:block;
+    width:630px;
+    margin-left:190px;
+    margin-top:-29px;
+    }
+    
+      .title
+        {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        margin-bottom:16px;
+        }
+        
+      #header
+        {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color:#fefefe;
+        width:100%;
+        height:50px;
+        background-color:#1e4279;
+        margin:0px;
+        padding-left:14px;
+        padding-top:10px;
+	padding-bottom:6px;
+        }
+        
+        #header img{
+        margin-right:14px;
+	
+        }
+        
+     #bigWrapper
+        {
+        width:90%;
+       margin-left:auto;
+       margin-right:auto;
+       Text-align:center;
+       padding:0px;
+        }
+        
+    
+   
+ #picForm{
+    background-color:#dedede;
+    margin:0px;
+    padding:10px;
+    }
+    
+    .red{
+    color:#ff0000;
+    font-size:x-large;
+    font-weight:700;
+    }
+    
+    #picHolder{
+    position:absolute;
+    Text-align:right;
+    top:10px;
+	float:right;
+    right:180px;
+    background-color:#ededed;
+    padding:6px;
+    border-right:solid 1px #666;
+    border-bottom:solid 1px #777;
+    border-top:solid 1px #ffffff;
+    border-left:solid 1px #ffffff;
+    }
+    
+    .imageStyle{
+    padding:5px;
+    background-color:#ffffff;
+    border-right:solid 1px gray;
+    border-bottom:solid 1px gray;
+    }
+	
+   	h3{
+	
+	font:bold 26px/38px Arial, Helvetica, sans-serif;
+	color:#163C54;
+	}
+	
+	
+	/* preview styles */
+	
+	 #posterContainer
+    {
+        width:880px;
+        height:1580px;
+        margin-left:auto;
+        margin-right:auto;
+        }
+		
+#bannerWide img{
+   height:0px;
+   width:0px;
+   
+   }
+		
+	h2 {
+		margin-top:-5px;
+		font-size:25px;
+		}
+		
+	#featuredLabelDiv
+		{
+	   position:relative;
+       top:40px;
+       left:24px;
+	   height:4px;
+       display:block;
+       width:313px;
+	   text-align:center;
+       margin-bottom:2px;
+       z-index:9999;
+      } 
+     
+    .featuredLabelClass
+     {
+	    display:block;
+	    background-color:#c01f2f;
+       font-family:Georgia1, Georgia, serif;
+       font-size: 18px;
+       font-style:italic;
+	   font-weight: 600;
+	   color:#fefefe;
+       margin-bottom:2px;
+	   padding:4px;
+      }
+	  
+	.featureNotice
+		{
+		position:relative;
+		top:-500px;
+        left:20px;
+		z-index:9999;
+	  } 
+	  
+	  .featureNoticeImg
+	  {
+	 position:relative;
+		 top:15px;
+       left:-10px;
+	  z-index:9999;
+		
+	  }
+	  
+	.featuredNoticelabel
+    {
+	   
+	   width:320px;
+	   font-weight: 600;
+       display:block;
+       background-color:#dedede;
+	   border:solid 2px #ff0000;
+       margin-bottom:2px;
+	   text-align:center;
+       padding:6px;
+      }
+	  
+	#statusLabelDiv
+    { 
+		height:12px;
+	   position:relative;
+	   width:300px;
+      top:60px;
+	  left:32px;
+       text-align:Center;
+       margin-bottom:2px;
+       z-index:9999;
+      } 
+     
+    .statusLabelClass
+     {
+	display:block;
+	font-family:Arial, Arial, Helvetica, sans-serif;
+      font-size: 46px;
+      font-weight: 800;
+	   line-Height:50px;
+	  color:#c01f2f;
+      margin-bottom:2px;
+	  text-align:Center;
+	  padding-top:6px;
+	  padding-bottom:12px;
+	  }
+	  
+	  #rewardPaidDiv
+    { 
+	  height:12px;
+	   position:relative;
+	   width:300px;
+      top:416px;
+	  left:22px;
+       text-align:Center;
+       margin-bottom:2px;
+       z-index:9999;
+	 } 
+     
+    .rewardPaidLabelClass
+     {
+	  display :block;
+	  font-family:Arial, Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      background-color:#63cc40;
+      font-weight: 700;
+	  width:305px;
+	  color:#fefefe;
+      margin-bottom:2px;
+      padding:6px;
+	
+	}
+		
+    .bigNameLabel
+    {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 30px;
+	  font-weight: 700;
+	  margin-bottom:2px;
+     
+     }  
+     #nameDiv
+     {
+         width:720px;
+		line-height:26px;
+		 padding:4px;
+         border-bottom:solid 1px #dedede;
+         text-align:center;
+		 margin-top:4px;
+		 margin-bottom:2px;
+         margin-left:auto;
+         margin-right:auto;
+         }
+         
+     #imgHolder
+     {
+      position:relative;
+      float:left;
+      left:4px;
+      padding:10px;
+      margin:18px;
+      width:294px;
+      height:370px;
+      background-color:White;
+      border-bottom:solid 2px #cccccc;
+      border-right:solid 2px #cccccc;   
+      text-align:center;
+         }
+     
+     img 
+     {
+       margin:6px;
+      }
+         
+    .altImage{
+     position:absolute;
+	 width:286px;
+	 top:6px;
+	 left:8px;
+	 z-index:9922;
+       }
+         
+    #detailItems
+      {
+         display:block;
+		 float:left;
+         width:510px;
+		 line-height:17px;
+         height:620px;
+		 margin-top:15px;
+	}
+         
+    .labelText
+      {
+        position:absolute;
+		display:block;
+		width:130px;
+		margin:0px;
+		height:15px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 11px;
+	    font-weight: 600;
+	    text-transform:uppercase;
+		color:#444; 
+		text-align:right;
+       }
+		  
+  
+     .detailText 
+    {	display:block;
+		background-color:#fbfbfb;
+		width:350px;
+		line-height:17px;
+        min-height:17px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	    font-weight: 500;
+	    text-align:left;
+	    margin-left:135px;
+		border-top:solid 1px #ffffff;
+		border-bottom:solid 1px #dedede;
+		color:#333;
+	}
+	
+	.detailText2 
+    {	display:block;
+		background-color:#fbfbfb;
+		width:350px;
+		line-height:17px;
+		height:66px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	    font-weight:500;
+	    text-align:left;
+	    margin-left:135px;
+		border-top:solid 1px #ffffff;
+		border-bottom:solid 1px #dedede;
+
+		color:#333;
+	}
+	
+	.detailText3 
+    {	display:block;
+		background-color:#fbfbfb;
+		width:350px;
+		line-height:17px;
+		height:82px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	    font-weight:500;
+	    text-align:left;
+	    margin-left:135px;
+
+		border-top:solid 1px #ffffff;
+		border-bottom:solid 1px #dedede;
+		color:#333;
+	}
+	
+	.detailLabelText 
+    {	
+		width:400px;
+		height:24px;
+        font-family:Arial, Helvetica, sans-serif;
+		font-size: 13px;
+	    font-weight:600;
+	    text-align:left;
+	    margin-left:5px;
+
+		color:#333;
+	}
+	
+	.FinalDetailsText 
+    {
+		display:block;
+		background-color:#fbfbfb;
+		margin-left:5px;
+		width:855px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 13px;
+	    font-weight: 500;
+		padding:4px;
+		color:#444;
+	}
+	
+	#detailsDiv{
+		width:876px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+    
+     .biggerRedLabel 
+     {
+        display:block;
+        width:720px;
+		line-height:30px;
+		margin-left:auto;
+        margin-right:auto;
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size: 28px;
+	    font-weight: 700;
+	    color:#c01f2f;
+	    text-transform: capitalize;
+	    text-align:center;
+	    padding-top: 2px;
+	    padding-right: 2px;
+	    padding-bottom: 2px;
+	    padding-left: 0px;
+	}
+	p.toggle{
+	    cursor:pointer;
+		color:#2c4972;
+	}
+	
+	a {
+	text-decoration:none;
+	}
+	
+	
+	.fugiPic{
+	width:280px;
+	height:360px;
+	}
+	
+	.linkDisplay{
+	position:relative;
+	top:16px;
+	font-weight:600;
+	}
+	 
+   div.bnrText {
+		float: left;
+		text-indent: 2px;
+		width: 375px;
+		padding: 2px;
+		margin:0px;	
+	}
+	
+	 </style>

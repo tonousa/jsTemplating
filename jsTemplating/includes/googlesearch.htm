@@ -1,0 +1,38 @@
+<%
+'Retrieve the QueryString
+strQSTR = ""
+strQSTR = Request.ServerVariables("QUERY_STRING")
+
+'Const STYLEPATH = "http://170.193.25.112/includes/styles/internetstylesheet.xslt"
+'Const STYLEPATH = "http://www.dps.texas.gov/includes/styles/internetstylesheet.xslt"
+Const STYLEPATH = "DPSInternet"
+Const MYSITE = "ER"
+
+if strQSTR <> "" then
+ Response.Redirect ("/search/searchresults.asp?" & strQSTR)
+end if
+
+%>
+<!-- Search My Google Search Appliance -->
+<form method="get" action="/search/searchresults.aspx">
+  <table>	
+    <tr>
+      	<td valign=center>
+          <input type="text" name="q" size="20" maxlength="255" value=""/>
+		</td>
+        <td valign=bottom>  
+		  <input type="image" name="btnG" src="/images/search.gif" alt="Search Button"/>
+          <input type="hidden" name="site" value="<%=MYSITE%>" />
+          <input type="hidden" name="client" value="<%=STYLEPATH%>" />
+          <input type="hidden" name="proxystylesheet" value="<%=STYLEPATH%>" />
+          <input type="hidden" name="output" value="xml_no_dtd"/>
+	      <input type="hidden" name="getfields" value="title.keywords"/>
+	      <!--<input type="hidden" name="restrict" value="ER"/>-->
+      	</td>
+	<td>
+	<a href="/search/advancedsearch.asp?site=<%=MYSITE%>&client=<%=STYLEPATH%>&proxystylesheet=<%=STYLEPATH%>&output=xml_no_dtd&&proxycustom=<ADVANCED/>"><img src="/images/advancedsearch.gif" width="98" height="20" border="0" alt="advanced search" /></a>
+	</td>
+    </tr>
+  </table>
+</form>
+<!-- Search My Google Search Appliance-->

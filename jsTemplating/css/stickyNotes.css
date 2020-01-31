@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* Comment: StickyNote container: Used to position the StickyNote image on the menu */
+.stickyNote{
+		background-image:url('/images/StickyNotes/StickyNoteSm.png');
+		background-repeat: no-repeat;
+		top:122px;
+		width:188px;
+		height:200px;
+		margin-left:40px;
+	}	
+/* Comment: StickyNote text: Used to position the StickyNote text/content over the StickyNote image */
+.stickyNoteText{
+		transform: rotate(-3deg);
+		height:140px;
+		width:155px;
+		margin-left:10px;
+		margin-top:10px;
+		font-family: Bradley Hand ITC, Footlight MT Light, Franklin Gothic Book, Goudy Old Style, Times New Roman;
+		color:#000000;
+		text-align:center;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 95%;
+		font-size: 20px;
+		border-style:none;
+		
+		img {border: none;}
+	}

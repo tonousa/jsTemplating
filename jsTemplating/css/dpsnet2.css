@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+			
+		body{
+                background:#f0f0f0;
+                font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+				overflow-x:hidden;
+            }
+		#banner {
+			position:inherit;
+			background:#333333;
+			margin-bottom:0px;
+			height:50px;
+			width:100%;
+			padding:2px;
+			
+			}
+			
+		.topMenu {
+			background:#555555;
+			font: 14px  Arial, Helvetica, sans-serif;
+			color:#CCCCCC;
+			text-align:right;
+			height:25px;
+			padding-right:80px;
+			padding-top:4px;
+			}
+			
+		.topMenu a{
+			background:#555555;
+			font: 14px  Arial, Helvetica, sans-serif;
+			color:#CCCCCC; 
+			margin-right: 6px;
+			text-align:right;
+			text-decoration:none;
+			height:20px;
+			padding:2px;
+			
+			}
+			
+		.topMenu a:Hover {
+			background:#333333;	
+			
+			}
+			
+           h1{
+				
+                font-size:90px;
+                line-height:70px;
+                text-transform: uppercase;
+                color:#555555;
+                position:absolute;
+                text-shadow:0 1px 1px #333333;
+                top:-12px;
+                left:-20px;
+                white-space: nowrap;
+            }
+			
+            span.reference{
+                position:fixed;
+                left:10px;
+                bottom:10px;
+                font-size:11px;
+            }
+            span.reference a{
+                color:#DF7B61;
+                text-decoration:none;
+                text-transform: uppercase;
+                text-shadow:0 1px 0 #fff;
+            }
+            span.reference a:hover{
+                color:#000;
+            }
+            .box{
+                margin-top:0px;
+                height:90%;
+				width:100%;
+                position:relative;
+                background:#fff;
+				-moz-box-shadow:0px 0px 10px #aaa;
+				-webkit-box-shadow:0px 0px 10px #aaa;
+				-box-shadow:0px 0px 10px #aaa;
+            }
+            .box h2{
+				color:#f0f0f0;
+				padding:40px 10px;
+				text-shadow:1px 1px 1px #ccc;
+            }
+			
+		.modBox {
+			background-color:#ffffff;
+			font: 11px/16px Georgia, "Times New Roman", Times, serif;
+			color:#666666; 
+			height:222px; 
+			width:275px; 
+			margin:12px; margin-top:12px; 
+			padding:6px;float:left;
+			}
+			
+		.modBox ul {
+			font: 11px Georgia, "Times New Roman", Times, serif; 
+			list-style-type:circle;
+			margin-left:16px;
+			padding:10px;
+			}
+
+        </style>

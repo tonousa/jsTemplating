@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<offices>
+ <station>
+  <RECORD>
+   
+   <Office_city Type="Text">  select a city  </Office_city>
+    <Office_zip Type="Text">CVE offices</Office_zip>
+	
+  </RECORD>
+   <RECORD>
+     <Office_address Type="Text">2720 INDUSTRIAL BLVD</Office_address>
+     <Office_city Type="Text">ABILENE</Office_city>
+     <Office_zip Type="Text">79605</Office_zip>
+     <Office_phone Type="Text">325-795-4013</Office_phone>
+   </RECORD>
+   <RECORD>
+     <Office_address Type="Text">test address</Office_address>
+     <Office_city Type="Text">ABILENE</Office_city>
+     <Office_zip Type="Text">test zip</Office_zip>
+     <Office_phone Type="Text">test phone</Office_phone>
+   </RECORD>
+   <RECORD>
+   <Office_address Type="Text">300 S JOHNSON</Office_address>
+   <Office_city Type="Text">ALICE</Office_city>
+   <Office_zip Type="Text">78332</Office_zip>
+   <Office_phone Type="Text">3616688296</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">4200 CANYON DR</Office_address>
+   <Office_city Type="Text">AMARILLO</Office_city>
+   <Office_zip Type="Text">79109</Office_zip>
+   <Office_phone Type="Text">8064681330</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">9000 N IH-35</Office_address>
+   <Office_city Type="Text">AUSTIN</Office_city>
+   <Office_zip Type="Text">78753</Office_zip>
+   <Office_phone Type="Text">5129974120</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">5420 DECKER DR</Office_address>
+   <Office_city Type="Text">BAYTOWN</Office_city>
+   <Office_zip Type="Text">77520</Office_zip>
+   <Office_phone Type="Text">2814241339</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">7200 EASTEX FRWY</Office_address>
+   <Office_city Type="Text">BEAUMONT</Office_city>
+   <Office_zip Type="Text">77708</Office_zip>
+   <Office_phone Type="Text">4099245444</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2901 PAREDES LINE RD</Office_address>
+   <Office_city Type="Text">BROWNSVILLE</Office_city>
+   <Office_zip Type="Text">78521</Office_zip>
+   <Office_phone Type="Text">9569831922</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1700 AVE F, NW</Office_address>
+   <Office_city Type="Text">CHILDRESS</Office_city>
+   <Office_zip Type="Text">79201</Office_zip>
+   <Office_phone Type="Text">9409372548</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1922 S PADRE ISLAND DR</Office_address>
+   <Office_city Type="Text">CORPUS CHRISTI</Office_city>
+   <Office_zip Type="Text">78416-1399</Office_zip>
+   <Office_phone Type="Text">3616985669</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2000 S TRINITY</Office_address>
+   <Office_city Type="Text">DECATUR</Office_city>
+   <Office_zip Type="Text">76234</Office_zip>
+   <Office_phone Type="Text">9406270035</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2012 VETERANS BLVD</Office_address>
+   <Office_city Type="Text">DEL RIO</Office_city>
+   <Office_zip Type="Text">78840</Office_zip>
+   <Office_phone Type="Text">8307753569</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">209 S TEEL</Office_address>
+   <Office_city Type="Text">DEVINE</Office_city>
+   <Office_zip Type="Text">78016</Office_zip>
+   <Office_phone Type="Text">8306658035</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">555 S MONROE</Office_address>
+   <Office_city Type="Text">EAGLE PASS</Office_city>
+   <Office_zip Type="Text">78852</Office_zip>
+   <Office_phone Type="Text">8307574683</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">11612 SCOTT SIMPSON</Office_address>
+   <Office_city Type="Text">EL PASO</Office_city>
+   <Office_zip Type="Text">79936</Office_zip>
+   <Office_phone Type="Text">9158494051</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">650 GATEWAY N </Office_address>
+   <Office_city Type="Text">EL PASO (BOTA POE)</Office_city>
+   <Office_zip Type="Text">79905</Office_zip>
+   <Office_phone Type="Text">9158387800</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">615 S AMERICAS AVE </Office_address>
+   <Office_city Type="Text">EL PASO (YSLETA POE)</Office_city>
+   <Office_zip Type="Text">79907</Office_zip>
+   <Office_phone Type="Text">9158494178</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2302 W DICKINSON</Office_address>
+   <Office_city Type="Text">FT STOCKTON</Office_city>
+   <Office_zip Type="Text">79735</Office_zip>
+   <Office_phone Type="Text">4323363414</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">350 W IH-30</Office_address>
+   <Office_city Type="Text">GARLAND</Office_city>
+   <Office_zip Type="Text">75043</Office_zip>
+   <Office_phone Type="Text">2148612229</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1630 N 77 SUNSHINE STRIP</Office_address>
+   <Office_city Type="Text">HARLINGEN</Office_city>
+   <Office_zip Type="Text">78550</Office_zip>
+   <Office_phone Type="Text">9564231160</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">12230 WEST RD</Office_address>
+   <Office_city Type="Text">HOUSTON</Office_city>
+   <Office_zip Type="Text">77065-4523</Office_zip>
+   <Office_phone Type="Text">2815171259</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">344 SH 75N STE 200 </Office_address>
+   <Office_city Type="Text">HUNTSVILLE</Office_city>
+   <Office_zip Type="Text">77320</Office_zip>
+   <Office_phone Type="Text">9364350474</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">624 NE LOOP 820</Office_address>
+   <Office_city Type="Text">HURST</Office_city>
+   <Office_zip Type="Text">76053</Office_zip>
+   <Office_phone Type="Text">8172991382</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">1901 BOB BULLOCK LOOP</Office_address>
+   <Office_city Type="Text">LAREDO</Office_city>
+   <Office_zip Type="Text">78043-9701</Office_zip>
+   <Office_phone Type="Text">9567282251</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">609 S FM 509</Office_address>
+   <Office_city Type="Text">LOS INDIOS</Office_city>
+   <Office_zip Type="Text">78567</Office_zip>
+   <Office_phone Type="Text">9563995473</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1302 MAC DAVIS LANE</Office_address>
+   <Office_city Type="Text">LUBBOCK</Office_city>
+   <Office_zip Type="Text">79401</Office_zip>
+   <Office_phone Type="Text">8064722732</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2809 S JOHN REDDITT</Office_address>
+   <Office_city Type="Text">LUFKIN</Office_city>
+   <Office_zip Type="Text">75904</Office_zip>
+   <Office_phone Type="Text">9366345553</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2405 S LOOP 250 W</Office_address>
+   <Office_city Type="Text">MIDLAND</Office_city>
+   <Office_zip Type="Text">79703</Office_zip>
+   <Office_phone Type="Text">4324982180</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1906 N JEFFERSON</Office_address>
+   <Office_city Type="Text">MT PLEASANT</Office_city>
+   <Office_zip Type="Text">75455</Office_zip>
+   <Office_phone Type="Text">9035723139</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">3179 IH 45 SOUTH</Office_address>
+   <Office_city Type="Text">NEW WAVERLY</Office_city>
+   <Office_zip Type="Text">77358</Office_zip>
+   <Office_phone Type="Text">9363448553 </Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1900 W SPRING ST</Office_address>
+   <Office_city Type="Text">PALESTINE</Office_city>
+   <Office_zip Type="Text">75803</Office_zip>
+   <Office_phone Type="Text">9036615023</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">301 CAPOTE CENTRAL AVE</Office_address>
+   <Office_city Type="Text">PHARR</Office_city>
+   <Office_zip Type="Text">78577</Office_zip>
+   <Office_phone Type="Text">9567829261</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">BOX 1084</Office_address>
+   <Office_city Type="Text">QUEEN CITY</Office_city>
+   <Office_zip Type="Text">75572</Office_zip>
+   <Office_phone Type="Text">9037964782</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">BOX 240</Office_address>
+   <Office_city Type="Text">RICHMOND</Office_city>
+   <Office_zip Type="Text">77406-0240</Office_zip>
+   <Office_phone Type="Text">216335408</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">RT 1 BOX 181</Office_address>
+   <Office_city Type="Text">RIVIERA</Office_city>
+   <Office_zip Type="Text">78379</Office_zip>
+   <Office_phone Type="Text">3612963391</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">5505 AVE N</Office_address>
+   <Office_city Type="Text">ROSENBERG</Office_city>
+   <Office_zip Type="Text">77471</Office_zip>
+   <Office_phone Type="Text">2816335408</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">1600 S LOOP 306</Office_address>
+   <Office_city Type="Text">SAN ANGELO</Office_city>
+   <Office_zip Type="Text">79604</Office_zip>
+   <Office_phone Type="Text">3252236502</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">6502 S NEW BRAUNFELS AVE</Office_address>
+   <Office_city Type="Text">SAN ANTONIO</Office_city>
+   <Office_zip Type="Text">78223</Office_zip>
+   <Office_phone Type="Text">2105312245</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1400 N IH-35</Office_address>
+   <Office_city Type="Text">SAN MARCOS</Office_city>
+   <Office_zip Type="Text">78666</Office_zip>
+   <Office_phone Type="Text">5123537000 X 3</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">BOX 130040</Office_address>
+   <Office_city Type="Text">TYLER</Office_city>
+   <Office_zip Type="Text">75713</Office_zip>
+   <Office_phone Type="Text">9039396123</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">8802 N NAVARRO</Office_address>
+   <Office_city Type="Text">VICTORIA</Office_city>
+   <Office_zip Type="Text">77904</Office_zip>
+   <Office_phone Type="Text">3615752543</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1617 E CREST DR</Office_address>
+   <Office_city Type="Text">WACO</Office_city>
+   <Office_zip Type="Text">76705</Office_zip>
+   <Office_phone Type="Text">2547597129</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">1720 E MAIN ST</Office_address>
+   <Office_city Type="Text">WAXAHACHIE</Office_city>
+   <Office_zip Type="Text">75165</Office_zip>
+   <Office_phone Type="Text">9726236772</Office_phone>
+  </RECORD>
+  <RECORD>
+   <Office_address Type="Text">2525 N INTERNATIONAL BLVD</Office_address>
+   <Office_city Type="Text">WESLACO</Office_city>
+   <Office_zip Type="Text">78596</Office_zip>
+   <Office_phone Type="Text">9565657500</Office_phone>
+  </RECORD>
+   <RECORD>
+   <Office_address Type="Text">5505 N CENTRAL FRWY</Office_address>
+   <Office_city Type="Text">WICHITA FALLS</Office_city>
+   <Office_zip Type="Text">76306-1010</Office_zip>
+   <Office_phone Type="Text">9408515530</Office_phone>
+  </RECORD>
+    
+ </station>
+</offices>

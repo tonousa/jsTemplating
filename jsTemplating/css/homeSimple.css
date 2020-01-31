@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+#top10text {
+	display:block;
+	position:absolute;
+	width:165px;
+	left: 8px;
+	right: 4px;
+	top: 120px;
+	visibility: visible;
+	background-image: url(/images/topDivbg.jpg);
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #CCCCCC;	
+}
+#top10text a:hover{
+	color:#6F7D4D;
+	width:160px;	
+}
+#generalinfotext a:hover{
+	color:#6F7D4D;
+	width:160px;	
+}
+
+#generalinfotext {
+	display:block;
+	position:absolute;
+	width:165px;
+	left: 8px;
+	top: 413px;
+	visibility: visible;
+	background-image: url(/images/bottomDivbg.jpg);
+	background-repeat: no-repeat;
+	border-top: 1px none #CCCCCC;
+	border-right: 1px none #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px none #CCCCCC;
+}
+
+#generalinfotext ul { /* remove bullets and list indents */
+	font-size: 11px;
+	line-height:19px;
+	width:160px;
+	display:block;
+	list-style: none;
+	margin: 0px 0px 0px 2px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+#top10text ul { /* remove bullets and list indents */
+	font-size: 11px;
+	line-height:19px;
+	width:160px;
+	display:block;
+	list-style: none;
+	margin: 0px 0px 0px 2px;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#recruitbutton {
+	position:absolute;
+	visibility:visible;
+	width:200px;
+	height:100px;
+	top: 118px;
+	left: 181px;
+}
+#dlbutton {
+	position:absolute;
+	visibility:visible;
+	width:200px;
+	left: 181px;
+	top: 209px;
+}
+#largephoto {
+	position:absolute;
+	left: 480px;
+	top: 118px;
+	visibility: visible;
+}
+
+#flash1 {
+	position:absolute;
+	height:110px;
+	z-index:13;
+	left: 474px;
+	top: 120px;
+	visibility: visible;
+}
+
+#importantlinks {
+	position:absolute;
+	
+	left: 175px;
+	top: 445px;
+	visibility: visible;
+	width: 604px;
+	line-height: 1.5em;
+}
+
+.Important {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 19px;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #555555;
+	letter-spacing: -0.04em;
+	line-height: 2.0em;
+}
+
+
+#citizenlinks {
+	position:absolute;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	width:605px;
+	height:115px;
+	left: 162px;
+	top: 350px;
+	visibility: visible;
+}
+	
+.LinkTitle {
+	display:block;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	color: #0055A5;
+	background-color: #FFFFFF;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	line-height: normal;
+	background-image: url(/images/smtitlebg.jpg);
+	background-repeat: no-repeat;
+}
+
+.wdLinkTitle {
+	display:block;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	color: #0055A5;
+	text-align: center;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	background-image: url(/images/wdtitlebg.jpg);
+}
+
+
+#badgeholder {
+	position:absolute;
+	width:150px;
+	left: 15px;
+	top: 800px;
+	visibility: visible;
+}
+
+#espanol {
+	position:absolute;
+	visibility:visible;
+	width:50px;
+	height:30px;
+	left: 110px;
+	top: 80px;
+}
+#oneBody {
+	height:750px;
+	font-size: 11px;
+	font-weight: 500;
+}
+
+
+.latenews {
+	position:absolute;
+	left:188px;
+	top:325px;
+	width: 579px;
+	background-color: #FFFFFF;
+}
+
+/*The announcement can be used when needing to insert a bold two line statement above the Press Release box*/
+
+#announcement {
+	position:absolute;
+	background:#4a8ac7;
+	height:65px;
+	left: 181px;
+	top: 318px;
+	visibility: visible;
+	width: 595px;
+	line-height: 1.5em;
+	color:#FFFFFF;
+	text-align:center;
+}
+#center {
+	background-position: center;
+}

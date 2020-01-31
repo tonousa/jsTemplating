@@ -1,0 +1,102 @@
+body {
+	background-color:#ffffff;
+	background-image:none;
+	color: black;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	}
+
+#pagecontainer {
+	
+	width: 790px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin-left:auto;
+	margin-right: auto;
+	/* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #395277;
+	background-color:#ffffff;
+	background-image:none;
+	background-repeat: repeat-y;
+	background-position: center;
+	text-align:left; /* this overrides the text-align: center on the body element. */
+	} 
+   
+H1, H2, H3 {
+	background: white; 
+	color: black; 
+	padding-bottom: 1px;
+
+   }
+   
+  #search {
+		display: none;
+	}
+	
+   
+ #appBanner {
+		display: none;
+	}
+	
+
+	
+#topNav{
+	display:none;
+}	
+
+.printLink{
+	display:none;
+}
+
+.spotItemRt {
+	font:78%/140% Verdana, Arial, Helvetica, sans-serif;
+	position:relative;
+	float:right;
+	background-color: #ededed;
+	width:240px;
+	padding:7px;
+	margin-right: 0px;
+	margin-left: 8px;
+	border: thin dotted #cdcdcd;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	z-index: 7;
+	}
+
+#pageMenu, #pageMenuRibbonVert{
+	display:none;
+}	
+
+#searchBox, #searchBoxWide{
+	display:none;
+}	
+	
+#banner2 {
+	display:block;
+	}
+	
+ #footer, #footerWide {
+		display: none;
+	}
+
+#topNavList {
+	display:none;
+	}
+	
+#topNavBox, #topNavWide {
+	display:none;
+	}
+
+#bannerDiv {
+	text-align: left;
+	margin-left: 8px;
+	}
+	
+.posterLink {
+		display: none;
+	}
+	
+
+
+	
+	

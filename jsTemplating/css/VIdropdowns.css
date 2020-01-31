@@ -1,0 +1,76 @@
+#VInav,
+#VInav ul			{ list-style: none; margin: 0px; padding: 0; }
+
+#VInav			{ 
+	
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 13px;
+	color: #333; 
+	height: 1.3em; 
+	line-height: 1.2em; 
+	width: 510px; 
+	}
+	
+#VInav li			{ 
+	background: #fefefe; 
+	background-image:url(/images/bluDownArrow.jpg);
+	background-position:right;
+	background-repeat: no-repeat;
+	float: left; 
+	height: 1.25em; 
+	width:110px;	
+	margin-left: 20px; 
+	margin-right: 28px;
+	margin-top: 15px;
+	padding: 1px; 
+	border:1px inset #E2E9EF;
+	position: relative; 
+	}
+	
+#VInav li:hover,
+#VInav li:focus		{ 
+	background-image:url(/images/bluDownArrowOver.jpg);
+	background-position:right;
+	background-repeat: no-repeat; }
+	
+#VInav a			{ 
+	color: #333; 
+	display: block; 
+	padding: 0.1em 6px 0.5em; /* 4px 20px 7px */ 
+	text-decoration: none; }
+
+#VInav a:hover,
+#VInav a:focus		{ color: #000; }
+
+#VInav ul	 	{ 
+	background: #fefefe; 
+	left: 0;
+	color:#000;
+	font-size: 14px; /* 12px / 14px */ 
+	line-height: 1.2em; /* 18px / 12px */ 
+	position: absolute;
+	border:1px solid #999999;
+	border-top:2px solid #E2E9EF;
+	top: 1.8em;  
+	width: 188px; 
+	}
+#VInav ul li		{ background: none; list-style: none; float: none; height: auto; border:0px; margin:0px; width: 184px; left: 3px;}
+#VInav ul a			{ background: none; padding: 0.083em 3px 0.15em; /* 1px 4px 3px */ width: 179px; }
+#VInav ul ul		{ font-size: .99em; }
+
+#VInav ul a:hover,
+#VInav ul a:focus		{ background: #6B9ACE; color:#ffffff;}
+#VInav ul .hover>a	{ background: #6B9ACE; color:#ffffff;}
+
+#VInav ul ul		{ left: 175px; top: 0.5em; /* 6px / 12px */ }
+
+#VInav ul,
+#VInav :hover ul ul,
+#VInav .hover ul ul	{ margin-left: -9999px; }
+
+#VInav li:hover>ul,
+#VInav li.hover>ul,
+#VInav a:focus+ul,
+#VInav ul ul,
+#VInav .hover a:focus	{ margin-left: 0; }
+#VInav ul a:focus		{ margin-left: 9999px; }
