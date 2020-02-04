@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="Content\camelot.css" />
     <Content Include="css\menu.css" />
+    <Content Include="handlebarsOffices.html" />
     <Content Include="handlebarsGroup.html" />
     <Content Include="handlebars.html" />
     <Content Include="includes\cascadeMenu.inc" />
