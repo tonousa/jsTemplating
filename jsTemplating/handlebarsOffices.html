@@ -11,17 +11,21 @@
         {{groupData this}}
         {{/each}}
         {{#each cache}}
-        {{city}}
+        {{id}}
         <ul id="area-{{id}}">
             {{#each data}}
-            <li id="{{sn}}">{{name}}</li>
+            <li id="{{address}}">{{zip}}</li>
             {{/each}}
         </ul>
         {{/each}}
     </script>
 
     <script>
+        var jsonObj = {};
+        jsonObj.offices = [];
+
         $(document).ready(function () {
+            alert("ready");
             //Register handlebars helper:
             var id = 0,
                 cache = [];
@@ -32,10 +36,10 @@
                 ids[data.city] = true;
                 if (cache[data.city] == undefined) cache[data.city] = { id: data.city, data: [data] };
                 else cache[data.city].data.push(data)
-                if (dataKey == context.data.length - 1) {
-                    context.cache = [];
+                if (dataKey == jsonObj.offices.length - 1) {
+                    jsonObj.cache = [];
                     for (var i in ids) {
-                        context.cache.push(cache[i])
+                        jsonObj.cache.push(cache[i])
                     }
                 }
             });
@@ -50,8 +54,6 @@
         });
 
         function addToTable(xmlData) {
-            var jsonObj = {};
-            jsonObj.offices = [];
             $('#target').empty();
             //debugger;
             var currentCity = "";
@@ -78,7 +80,7 @@
 
             var template = Handlebars.compile($("#your-template").text());
             var html = template(jsonObj);
-            document.body.innerHTML = html;
+            $("#target").html(html);
 
             //var html = Mustache.to_html(template, jsonObj);
             //$('#target').html(html);
@@ -87,7 +89,9 @@
 
 </head>
 <body>
+    <div id="target">
 
+    </div>
 </body>
 
 <script>
