@@ -30,8 +30,9 @@
         (function () {
 
             var id = 0,
-                cache = [];
+            cache = [];
             var ids = {};
+            console.log(context);
             Handlebars.registerHelper("groupData", function (data) {
                 //debugger;
                 var dataKey = id++;
@@ -44,6 +45,7 @@
                         context.cache.push(cache[i])
                     }
                 }
+                console.log(context);
             });
         })();
 
