@@ -16,8 +16,14 @@ namespace jsTemplating
             //    string valSubmitted = myVal.Text;
             //    myVal.Text = Helpers.Helpers.Encrypt(valSubmitted);
             //}
-            string myRandom = Helpers.Helpers.generateRandom();
-            myVal.Text = myRandom;
+            string myRandomVal = Helpers.Helpers.generateRandom();
+            myVal.Text = myRandomVal;
+
+            string imgUrl = Helpers.Helpers.GetImgUrl(myRandomVal);
+
+            decryptTextBox.Text = imgUrl;
+            txtImage.ImageUrl = imgUrl;
+            txtImage.Visible = true;
         }
 
         protected void EncryptBtn_Click(object sender, EventArgs e)
