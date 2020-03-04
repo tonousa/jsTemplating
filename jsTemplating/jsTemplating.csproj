@@ -68,6 +68,8 @@
   <ItemGroup>
     <Content Include="Content\camelot.css" />
     <Content Include="css\menu.css" />
+    <Content Include="Encrypt.aspx" />
+    <Content Include="MustaOffice.html" />
     <Content Include="handlebarsOffices.html" />
     <Content Include="handlebarsGroup.html" />
     <Content Include="handlebars.html" />
@@ -348,9 +350,19 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encrypt.aspx.cs">
+      <DependentUpon>Encrypt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Encrypt.aspx.designer.cs">
+      <DependentUpon>Encrypt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
