@@ -3,28 +3,49 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <script src="Scripts/jquery-1.8.3.js"></script>
-    <script src="Scripts/handlebars.js"></script>
+    <!--<script src="Scripts/jquery-1.8.3.js"></script>-->
+    <script src="https://www.dps.texas.gov/js/jquery.1.4.1.min.js"></script>
+    <!--<script src="Scripts/handlebars.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
 
-    <script type="text/x-handlebars" id="your-template">
-        {{#each offices}}
+    <script type="text/x-handlebars" id="your-template-old">
+        {{#each data}}
         {{groupData this}}
         {{/each}}
         {{#each cache}}
-        {{city}}
+        {{id}}
         <ul id="area-{{id}}">
             {{#each data}}
-            <li id="{{sn}}">{{name}}</li>
+            <li id="{{address}}">{{phone}} - {{zip}}</li>
             {{/each}}
         </ul>
         {{/each}}
     </script>
 
+    <script type="text/x-handlebars" id="your-template">
+        {{#each data}}
+        {{groupData this}}
+        {{/each}}
+        {{#each cache}}
+        <p>
+            <strong>{{id}}</strong> <br />
+            {{#each data}}
+                {{address}} - {{zip}} <br />
+                {{phone}} <br /><br />
+            {{/each}}
+            
+        </p>
+        {{/each}}
+    </script>
+
     <script>
+        var context = {};
+        context.data = [];
+
         $(document).ready(function () {
             //Register handlebars helper:
             var id = 0,
-                cache = [];
+            cache = [];
             var ids = {};
             Handlebars.registerHelper("groupData", function (data) {
                 //debugger;
@@ -43,15 +64,13 @@
 
             $.ajax({
                 type: "GET",
-                url: "/Scripts/officeList.xml",
+                url: "/assets/officeList.xml",
                 dataType: "xml",
                 success: addToTable
             });
         });
 
         function addToTable(xmlData) {
-            var jsonObj = {};
-            jsonObj.offices = [];
             $('#target').empty();
             //debugger;
             var currentCity = "";
@@ -65,7 +84,7 @@
                 _phone = _phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
 
                 if (_city != "  select a city  ") {
-                    jsonObj.offices.push({
+                    context.data.push({
                         city: _city,
                         address: _address,
                         zip: _zip,
@@ -74,58 +93,18 @@
                 }
             }); // each
 
-            console.log(jsonObj);
+            console.log(context);
 
             var template = Handlebars.compile($("#your-template").text());
-            var html = template(jsonObj);
-            document.body.innerHTML = html;
-
-            //var html = Mustache.to_html(template, jsonObj);
-            //$('#target').html(html);
+            var html = template(context);
+            //document.body.innerHTML = html;
+            $("#target").html(html);
         }
     </script>
 
 </head>
 <body>
-
+    <div id="target"></div>
 </body>
-
-<script>
-        /*(function () {
-
-            var id = 0,
-                cache = [];
-            var ids = {};
-            Handlebars.registerHelper("groupData", function (data) {
-                //debugger;
-                var dataKey = id++;
-                ids[data.areasn] = true;
-                if (cache[data.areasn] == undefined) cache[data.areasn] = { id: data.areasn, data: [data] };
-                else cache[data.areasn].data.push(data)
-                if (dataKey == context.data.length - 1) {
-                    context.cache = [];
-                    for (var i in ids) {
-                        context.cache.push(cache[i])
-                    }
-                }
-            });
-        })();
-
-        var context = {
-            "data": [
-              { "sn": "43", "areasn": "3", "name": "X1", "status": "empty", "seats": "12" },
-              { "sn": "22", "areasn": "1", "name": "F1", "status": "empty", "seats": "8" },
-              { "sn": "12", "areasn": "2", "name": "E1", "status": "empty", "seats": "6" },
-              { "sn": "18", "areasn": "3", "name": "R3", "status": "empty", "seats": "6" },
-              { "sn": "31", "areasn": "1", "name": "G4", "status": "empty", "seats": "4" },
-              { "sn": "23", "areasn": "2", "name": "W5", "status": "empty", "seats": "12" }
-            ]
-        }
-
-        var template = Handlebars.compile($("#your-template").text());
-        var html = template(context);
-        document.body.innerHTML = html;
-        */
-</script>
 
 </html>

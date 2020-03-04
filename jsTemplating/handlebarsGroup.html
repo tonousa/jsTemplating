@@ -30,8 +30,9 @@
         (function () {
 
             var id = 0,
-                cache = [];
+            cache = [];
             var ids = {};
+            // the data received is only one item of the array
             Handlebars.registerHelper("groupData", function (data) {
                 //debugger;
                 var dataKey = id++;
